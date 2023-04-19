@@ -1,0 +1,278 @@
+[2023-04-19 19:32:14,291] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: PredictingPipeline.predict_service_step manual__2023-04-19T19:32:13.335214+00:00 [queued]>
+[2023-04-19 19:32:14,299] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: PredictingPipeline.predict_service_step manual__2023-04-19T19:32:13.335214+00:00 [queued]>
+[2023-04-19 19:32:14,299] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19 19:32:14,299] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2023-04-19 19:32:14,299] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19 19:32:14,309] {taskinstance.py:1264} INFO - Executing <Task(DockerOperatorWithExposedPorts): predict_service_step> on 2023-04-19 19:32:13.335214+00:00
+[2023-04-19 19:32:14,314] {standard_task_runner.py:52} INFO - Started process 1108 to run task
+[2023-04-19 19:32:14,316] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'PredictingPipeline', 'predict_service_step', 'manual__2023-04-19T19:32:13.335214+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/predict_pipeline.py', '--cfg-path', '/tmp/tmpso1jv6gk', '--error-file', '/tmp/tmp4q312pk8']
+[2023-04-19 19:32:14,317] {standard_task_runner.py:77} INFO - Job 48: Subtask predict_service_step
+[2023-04-19 19:32:14,364] {logging_mixin.py:109} INFO - Running <TaskInstance: PredictingPipeline.predict_service_step manual__2023-04-19T19:32:13.335214+00:00 [running]> on host dfdc77248185
+[2023-04-19 19:32:14,413] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=PredictingPipeline
+AIRFLOW_CTX_TASK_ID=predict_service_step
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-19T19:32:13.335214+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-19T19:32:13.335214+00:00
+[2023-04-19 19:32:14,427] {docker.py:236} INFO - Starting docker container from image ml_project
+[2023-04-19 19:32:14,429] {docker.py:247} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-04-19 19:32:15,666] {docker_operator_with_exposed_ports.py:93} INFO - b'2023-04-19 19:32:15,665 DEBUG: Using selector: EpollSelector\n'
+[2023-04-19 19:32:15,669] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     Started server process [6]\nINFO:     Waiting for application startup.\n'
+[2023-04-19 19:32:15,669] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     Application startup complete.\n'
+[2023-04-19 19:32:15,669] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)\n'
+[2023-04-19 19:32:17,556] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37584 - "GET /ping HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,568] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37596 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,576] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37610 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,581] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37614 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,586] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37620 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,590] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37630 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,595] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37644 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,600] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37650 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,605] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37666 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,610] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37680 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,616] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37682 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,620] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37686 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,625] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37702 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,629] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37718 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,634] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37720 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,639] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37728 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,645] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37732 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,649] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37738 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,653] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37744 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,657] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37752 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,661] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37764 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,665] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37780 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,669] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37794 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,673] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37798 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,677] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37804 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,681] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37814 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,685] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37822 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,689] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37836 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,693] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37842 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,697] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37850 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,701] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37862 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,705] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37864 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,709] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37870 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,714] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37884 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,718] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37892 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,722] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37900 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,727] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37906 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,731] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37916 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,735] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37932 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,739] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37936 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,743] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37952 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,747] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37958 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,751] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37970 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,755] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37986 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,759] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:37998 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,764] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38002 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,768] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38008 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,772] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38020 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,776] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38022 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,780] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38026 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,784] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38036 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,788] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38046 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,792] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38060 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,796] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38062 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,800] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38072 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,804] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38076 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,808] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38082 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,812] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38092 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,816] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38096 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,820] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38102 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,824] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38114 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,827] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38124 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,831] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38132 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,835] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38140 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,839] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38156 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,843] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38164 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,847] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38174 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,852] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38176 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,856] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38184 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,860] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38194 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,865] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38196 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,869] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38204 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,873] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38206 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,879] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38220 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,884] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38228 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,888] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38232 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,894] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38236 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,899] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38242 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,904] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38250 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,908] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38262 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,912] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38274 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,917] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38288 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,921] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38302 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,926] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38304 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,931] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38310 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,937] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38318 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,943] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38334 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,949] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38340 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,956] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38344 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,965] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38356 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,974] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38362 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,982] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38378 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,988] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38380 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,993] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38396 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:17,997] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38404 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,001] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38412 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,005] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38424 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,009] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38428 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,014] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38440 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,018] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38444 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,023] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38460 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,027] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38462 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,033] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38464 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,039] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38476 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,045] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38480 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,051] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38496 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,057] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38504 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,062] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38506 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,066] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38510 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,071] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38520 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,076] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38522 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,080] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38532 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,085] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38542 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,089] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38558 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,093] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38570 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,097] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38576 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,101] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38586 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,105] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38594 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,109] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38610 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,113] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38612 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,117] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38614 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,123] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38622 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,127] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38630 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,131] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38642 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,135] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38648 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,139] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38658 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,143] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38670 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,147] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38674 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,151] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38678 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,155] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38694 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,159] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38698 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,163] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38712 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,167] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38722 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,171] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38732 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,175] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38740 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,179] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38754 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,183] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38756 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,187] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38762 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,191] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38764 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,195] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38766 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,199] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38770 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,203] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38782 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,207] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38796 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,211] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38806 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,215] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38808 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,219] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38822 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,223] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38838 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,227] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38840 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,231] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38842 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,237] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38850 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:18,242] {docker_operator_with_exposed_ports.py:93} INFO - b'INFO:     172.25.0.4:38854 - "POST /predict HTTP/1.1" 200 OK\n'
+[2023-04-19 19:32:31,815] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 960, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http+docker://localhost/v1.42/containers/create?name=mlproject
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 243, in _run_image
+    return self._run_image_with_mounts(self.mounts + [tmp_mount], add_tmp_variable=True)
+  File "/opt/airflow/plugins/operators/docker_operator_with_exposed_ports.py", line 76, in _run_image_with_mounts
+    tty=self.tty,
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/container.py", line 428, in create_container
+    return self.create_container_from_config(config, name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/container.py", line 439, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/errors.py", line 31, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation)
+docker.errors.APIError: 400 Client Error for http+docker://localhost/v1.42/containers/create?name=mlproject: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /tmp/airflowtmpvu8xyvq2")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 376, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 252, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/opt/airflow/plugins/operators/docker_operator_with_exposed_ports.py", line 99, in _run_image_with_mounts
+    raise AirflowException(
+NameError: name 'AirflowException' is not defined
+[2023-04-19 19:32:31,825] {taskinstance.py:1282} INFO - Marking task as FAILED. dag_id=PredictingPipeline, task_id=predict_service_step, execution_date=20230419T193213, start_date=20230419T193214, end_date=20230419T193231
+[2023-04-19 19:32:31,843] {standard_task_runner.py:92} ERROR - Failed to execute job 48 for task predict_service_step
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 960, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http+docker://localhost/v1.42/containers/create?name=mlproject
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 243, in _run_image
+    return self._run_image_with_mounts(self.mounts + [tmp_mount], add_tmp_variable=True)
+  File "/opt/airflow/plugins/operators/docker_operator_with_exposed_ports.py", line 76, in _run_image_with_mounts
+    tty=self.tty,
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/container.py", line 428, in create_container
+    return self.create_container_from_config(config, name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/container.py", line 439, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/docker/errors.py", line 31, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation)
+docker.errors.APIError: 400 Client Error for http+docker://localhost/v1.42/containers/create?name=mlproject: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /tmp/airflowtmpvu8xyvq2")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 376, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 252, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/opt/airflow/plugins/operators/docker_operator_with_exposed_ports.py", line 99, in _run_image_with_mounts
+    raise AirflowException(
+NameError: name 'AirflowException' is not defined
+[2023-04-19 19:32:31,862] {local_task_job.py:154} INFO - Task exited with return code 1
+[2023-04-19 19:32:31,889] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
