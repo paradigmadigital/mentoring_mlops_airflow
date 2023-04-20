@@ -1,0 +1,56 @@
+[2023-04-19 19:28:48,064] {processor.py:163} INFO - Started process (PID=750) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:28:48,065] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:28:48,066] {logging_mixin.py:109} INFO - [2023-04-19 19:28:48,066] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:28:48,423] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:28:48,429] {logging_mixin.py:109} INFO - [2023-04-19 19:28:48,429] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:28:48,436] {logging_mixin.py:109} INFO - [2023-04-19 19:28:48,436] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:28:48,444] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.383 seconds
+[2023-04-19 19:29:17,562] {processor.py:163} INFO - Started process (PID=797) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:29:17,565] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:29:17,565] {logging_mixin.py:109} INFO - [2023-04-19 19:29:17,565] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:29:17,933] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:29:18,078] {logging_mixin.py:109} INFO - [2023-04-19 19:29:18,078] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:29:18,086] {logging_mixin.py:109} INFO - [2023-04-19 19:29:18,086] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:29:18,094] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.535 seconds
+[2023-04-19 19:29:48,208] {processor.py:163} INFO - Started process (PID=844) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:29:48,209] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:29:48,210] {logging_mixin.py:109} INFO - [2023-04-19 19:29:48,210] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:29:48,595] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:29:48,601] {logging_mixin.py:109} INFO - [2023-04-19 19:29:48,601] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:29:48,609] {logging_mixin.py:109} INFO - [2023-04-19 19:29:48,609] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:29:48,617] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.413 seconds
+[2023-04-19 19:30:18,744] {processor.py:163} INFO - Started process (PID=892) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:30:18,746] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:30:18,747] {logging_mixin.py:109} INFO - [2023-04-19 19:30:18,747] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:30:19,114] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:30:19,121] {logging_mixin.py:109} INFO - [2023-04-19 19:30:19,121] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:30:19,131] {logging_mixin.py:109} INFO - [2023-04-19 19:30:19,131] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:30:19,138] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.398 seconds
+[2023-04-19 19:30:49,259] {processor.py:163} INFO - Started process (PID=939) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:30:49,261] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:30:49,261] {logging_mixin.py:109} INFO - [2023-04-19 19:30:49,261] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:30:49,615] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:30:49,621] {logging_mixin.py:109} INFO - [2023-04-19 19:30:49,621] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:30:49,628] {logging_mixin.py:109} INFO - [2023-04-19 19:30:49,628] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:30:49,634] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.379 seconds
+[2023-04-19 19:31:19,750] {processor.py:163} INFO - Started process (PID=986) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:31:19,752] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:31:19,752] {logging_mixin.py:109} INFO - [2023-04-19 19:31:19,752] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:31:20,104] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:31:20,110] {logging_mixin.py:109} INFO - [2023-04-19 19:31:20,110] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:31:20,118] {logging_mixin.py:109} INFO - [2023-04-19 19:31:20,118] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:31:20,122] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.376 seconds
+[2023-04-19 19:31:50,546] {processor.py:163} INFO - Started process (PID=1046) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:31:50,548] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:31:50,548] {logging_mixin.py:109} INFO - [2023-04-19 19:31:50,548] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:31:50,915] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:31:50,923] {logging_mixin.py:109} INFO - [2023-04-19 19:31:50,923] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:31:50,933] {logging_mixin.py:109} INFO - [2023-04-19 19:31:50,933] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:31:50,940] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.396 seconds
+[2023-04-19 19:32:21,037] {processor.py:163} INFO - Started process (PID=1130) to work on /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:32:21,039] {processor.py:642} INFO - Processing file /opt/airflow/dags/predict_pipeline.py for tasks to queue
+[2023-04-19 19:32:21,041] {logging_mixin.py:109} INFO - [2023-04-19 19:32:21,039] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:32:21,460] {processor.py:654} INFO - DAG(s) dict_keys(['PredictingPipeline']) retrieved from /opt/airflow/dags/predict_pipeline.py
+[2023-04-19 19:32:21,467] {logging_mixin.py:109} INFO - [2023-04-19 19:32:21,467] {dag.py:2398} INFO - Sync 1 DAGs
+[2023-04-19 19:32:21,478] {logging_mixin.py:109} INFO - [2023-04-19 19:32:21,478] {dag.py:2937} INFO - Setting next_dagrun for PredictingPipeline to 2023-04-19T19:04:31.704464+00:00
+[2023-04-19 19:32:21,484] {processor.py:171} INFO - Processing /opt/airflow/dags/predict_pipeline.py took 0.451 seconds

@@ -1,0 +1,24 @@
+[2023-04-19 19:28:46,890] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: TrainingPipeline.register_model manual__2023-04-19T19:28:38.663405+00:00 [queued]>
+[2023-04-19 19:28:46,897] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: TrainingPipeline.register_model manual__2023-04-19T19:28:38.663405+00:00 [queued]>
+[2023-04-19 19:28:46,897] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19 19:28:46,897] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2023-04-19 19:28:46,897] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19 19:28:46,904] {taskinstance.py:1264} INFO - Executing <Task(DockerOperatorWithExposedPorts): register_model> on 2023-04-19 19:28:38.663405+00:00
+[2023-04-19 19:28:46,910] {standard_task_runner.py:52} INFO - Started process 749 to run task
+[2023-04-19 19:28:46,912] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'TrainingPipeline', 'register_model', 'manual__2023-04-19T19:28:38.663405+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/train_pipeline.py', '--cfg-path', '/tmp/tmpivia59t1', '--error-file', '/tmp/tmp4iq5xm_3']
+[2023-04-19 19:28:46,913] {standard_task_runner.py:77} INFO - Job 47: Subtask register_model
+[2023-04-19 19:28:46,948] {logging_mixin.py:109} INFO - Running <TaskInstance: TrainingPipeline.register_model manual__2023-04-19T19:28:38.663405+00:00 [running]> on host dfdc77248185
+[2023-04-19 19:28:46,973] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-04-19 19:28:46,986] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=TrainingPipeline
+AIRFLOW_CTX_TASK_ID=register_model
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-19T19:28:38.663405+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-19T19:28:38.663405+00:00
+[2023-04-19 19:28:46,998] {docker.py:236} INFO - Starting docker container from image ubuntu
+[2023-04-19 19:28:47,000] {docker.py:247} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-04-19 19:28:47,568] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=TrainingPipeline, task_id=register_model, execution_date=20230419T192838, start_date=20230419T192846, end_date=20230419T192847
+[2023-04-19 19:28:47,606] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-04-19 19:28:47,631] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
