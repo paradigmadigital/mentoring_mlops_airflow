@@ -104,12 +104,12 @@ To open the Airflow interface with the following url "http://localhost:8080/" (u
 
 ### ML Pipelines
 
-![airflow](img/airflow.png)
+![airflow](doc/airflow.png)
 
 #### TrainPipeline
 
-![train](img/train.png)
+![train](doc/train.png)
 
 #### PredictPipeline
 
-![predict](img/predict.png)
+![predict](doc/predict.png)
